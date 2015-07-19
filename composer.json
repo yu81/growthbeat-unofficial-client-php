@@ -1,0 +1,34 @@
+{
+    "repositories": [
+    {
+      "type":"package",
+        "package": {
+          "name": "sirok/growthpush-php",
+          "version":"master",
+          "source": {
+            "url": "https://github.com/SIROK/growthpush-php.git",
+            "type": "git",
+            "reference": "master"
+          }
+        }
+      }
+    ],
+    "name": "yu81/growthbeat-unofficial-client",
+    "authors": [
+        {
+            "name": "YU81",
+            "email": "yukiho0818@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+        "psr/log": "^1.0",
+        "sirok/growthpush-php": "@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "": ["lib/", "app/"]
+        },
+      "classmap": ["vendor/sirok/growthpush-php/"]
+    }
+}
