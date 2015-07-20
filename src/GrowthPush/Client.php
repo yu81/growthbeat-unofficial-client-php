@@ -25,36 +25,6 @@ class Client
         return $this;
     }
 
-    private function set($attributes)
-    {
-
-        if (array_key_exists('id', $attributes)) {
-            $this->id = $attributes['id'];
-        }
-        if (array_key_exists('applicationId', $attributes)) {
-            $this->applicationId = $attributes['applicationId'];
-        }
-        if (array_key_exists('code', $attributes)) {
-            $this->code = $attributes['code'];
-        }
-        if (array_key_exists('token', $attributes)) {
-            $this->token = $attributes['token'];
-        }
-        if (array_key_exists('os', $attributes)) {
-            $this->os = $attributes['os'];
-        }
-        if (array_key_exists('environment', $attributes)) {
-            $this->environment = $attributes['environment'];
-        }
-        if (array_key_exists('status', $attributes)) {
-            $this->status = $attributes['status'];
-        }
-        if (array_key_exists('created', $attributes)) {
-            $this->created = $attributes['created'];
-        }
-
-    }
-
     public function getId()
     {
         return $this->id;
