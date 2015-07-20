@@ -14,22 +14,31 @@ class GrowthPush
     }
 
     /**
-     * @param $token
-     * @param $os
+     * @param string $token
+     * @param string $os
      *
      * @return \GrowthPush\Client
      */
     public function createClient($token, $os)
     {
         /** @var \GrowthBeatUnOfficial\GrowthPush\Client $client */
-        $client = new \GrowthBeatUnOfficial\GrowthPush\Client($client->getToken(), $client->getOs());
+        $client = new \GrowthBeatUnOfficial\GrowthPush\Client($token, $os);
 
         return $client->save($this->_growthPush);
     }
 
-    public function createTag($name, $value = null)
+    /**
+     * @param \GrowthPush\Client|string $client string の場合はtoken
+     * @param string                    $name
+     * @param string                    $value
+     *
+     * @return \GrowthBeatUnOfficial\GrowthPush\Tag
+     */
+    public function createTag($client, $name, $value = null)
     {
-        return $this->_growthPush->createTag($this->_growthPush, $name, $value);
+        $tag = new \GrowthBeatUnOfficial\GrowthPush\Tag($client, $name, $value);
+
+        return $tag->save($this->_growthPush);
     }
 
     public function createEvent($name, $value = null)
