@@ -65,5 +65,9 @@ class Client
     {
         return $this->_client->getCreated();
     }
+
+    public function getGrowthPushClient()
+    {
+        return $this->_client;
     }
 }

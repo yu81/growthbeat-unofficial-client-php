@@ -36,4 +36,9 @@ class GrowthPush
     {
         return $this->_growthPush->createEvent($this->_growthPush, $name, $value);
     }
+
+    public function getGrowthPush()
+    {
+        return $this->_growthPush;
+    }
 }
