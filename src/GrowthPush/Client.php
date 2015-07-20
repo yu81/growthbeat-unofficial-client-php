@@ -15,8 +15,9 @@ class Client
     /**
      * @param \GrowthPush $growthPush
      *
-     * @return \GrowthBeatUnOfficial\GrowthPush\Client
      * @throws \GrowthPush\GrowthPushException
+     *
+     * @return \GrowthBeatUnOfficial\GrowthPush\Client
      */
     public function save($growthPush)
     {
