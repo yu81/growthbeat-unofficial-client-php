@@ -28,41 +28,42 @@ class Client
 
     public function getId()
     {
-        return $this->id;
+        return $this->_client->getId();
     }
 
     public function getApplicationId()
     {
-        return $this->applicationId;
+        return $this->_client->getApplicationId();
     }
 
     public function getCode()
     {
-        return $this->code;
+        return $this->_client->getCode();
     }
 
     public function getToken()
     {
-        return $this->token;
+        return $this->_client->getToken();
     }
 
     public function getOs()
     {
-        return $this->OS;
+        return $this->_client->getOs();
     }
 
     public function getEnvironment()
     {
-        return $this->environment;
+        return $this->_client->getEnvironment();
     }
 
     public function getStatus()
     {
-        return $this->status;
+        return $this->_client->getStatus();
     }
 
     public function getCreated()
     {
-        return $this->created;
+        return $this->_client->getCreated();
+    }
     }
 }
