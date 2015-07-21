@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-0": {
-            "": ["lib/", "app/"]
+            "": ["src/", "tests/"]
         },
       "classmap": ["vendor/sirok/growthpush-php/"]
     },
