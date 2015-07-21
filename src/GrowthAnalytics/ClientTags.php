@@ -4,7 +4,7 @@ namespace GrowthBeatUnOfficial\GrowthAnalytics;
 
 class ClientTags extends \GrowthBeatUnOfficial\GrowthAnalytics\Base
 {
-    const BASE_URL = 'https://api.analytics.growthbeat.com/1/client_tags';
+    const BASE_URL = parent::BASE_URL . 'client_tags';
 
     private $_clientId     = null;
     private $_tagId        = null;
