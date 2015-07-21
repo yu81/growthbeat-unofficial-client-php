@@ -4,5 +4,5 @@ machine:
 
 test:
   override:
-    - vendor/phpunit/phpunit/phpunit
+    - vendor/bin/phpunit
 
