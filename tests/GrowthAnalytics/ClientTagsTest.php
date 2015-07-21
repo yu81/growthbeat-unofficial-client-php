@@ -2,7 +2,7 @@
 
 namespace GrowthBeatUnOfficial\Tests\GrowthAnalytics;
 
-class ClientTagsTests extends \PHPUnit_Framework_TestCase
+class ClientTagsTest extends \PHPUnit_Framework_TestCase
 {
     public function setup()
     {
