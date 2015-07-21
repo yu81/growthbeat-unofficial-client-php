@@ -10,14 +10,14 @@ class ClientTagsTest extends \PHPUnit_Framework_TestCase
 
     public function testExecuteFail()
     {
-        $clientTags    = new \GrowthBeatUnOfficial\GrowthAnalytics\ClientTags("", "", "", "");
         $executeResult = false;
         try {
+            $clientTags    = new \GrowthBeatUnOfficial\GrowthAnalytics\ClientTags("", "", "", "");
             $executeResult = $clientTags->execute();
         } catch (\Exception $ex) {
-            $executeResult = false;
         } finally {
             $this->assertFalse($executeResult);
+            return;
         }
     }
 }
